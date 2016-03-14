@@ -53,7 +53,9 @@ public:
 			boost::asio::placeholders::error,
 			boost::asio::placeholders::bytes_transferred));
 	}
+	
 
+	//读数据包头（里面包含长度信息）
 	void handle_read_header(const boost::system::error_code& error,size_t bytes_transferred)
 	{
 		if (!error)
