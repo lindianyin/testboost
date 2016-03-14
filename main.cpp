@@ -13,7 +13,7 @@ using namespace std;
 using namespace boost;
 int main(int argc, char * argv[])
 {
-
+	int nSize = sizeof(CPack);
 	boost::asio::io_service io;
 	server s1(io,10241);
 	while(true)

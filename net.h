@@ -16,11 +16,16 @@
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_generators.hpp>
 
+#include <cstdint>
+
+//增加对齐
+#pragma pack(1)
 struct CPack
 {
-	int nLen;
-	unsigned char aBody[0];
+	uint32_t nLen;
+	uint8_t  aBody[0];
 };
+#pragma pack
 
 
 #define CPACK_BODY_MAX_SIZE (1024 * 64)
@@ -30,6 +35,8 @@ class session;
 typedef boost::shared_ptr<session> session_ptr;
 using boost::asio::ip::tcp;
 
+//方法以handle_开头的都是回调的的方法
+//所有类似async_read_some / async_write_some 之类的方法都是不能确保缓冲区里面的数据都发送
 class session
 	: public boost::enable_shared_from_this<session>
 {
@@ -55,7 +62,7 @@ public:
 	}
 	
 
-	//读数据包头（里面包含长度信息）
+	//读数据包头回调（里面包含长度信息）
 	void handle_read_header(const boost::system::error_code& error,size_t bytes_transferred)
 	{
 		if (!error)
@@ -86,6 +93,7 @@ public:
 		}
 	}
 
+	//读取包体完成回调
 	void handle_read_body(const boost::system::error_code& error,
 		size_t bytes_transferred, boost::shared_array<char> data,int nLen)
 	{
@@ -103,6 +111,7 @@ public:
 		}
 	}
 
+	//发送数据
 	void do_write(const char * pBuff,const int nLen)
 	{
 		int _nLen = sizeof(CPack) + nLen;
@@ -116,7 +125,7 @@ public:
 
 	}
 
-
+	//发送完成后回调
 	void handle_write(const boost::system::error_code& error, boost::shared_array<char> buff){
 		if (!error) 
 		{
