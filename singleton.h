@@ -23,8 +23,6 @@ public:
 	}
 private:
 	DbMgr(){}
-	DbMgr(const DbMgr&){}
-	void operator = (const DbMgr &){}
 private:
 	static boost::shared_ptr<DbMgr> _instance;
 };
