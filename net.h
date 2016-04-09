@@ -19,13 +19,13 @@
 #include <cstdint>
 
 //增加对齐
-#pragma pack(1)
+#pragma pack(push,1)
 struct CPack
 {
 	uint32_t nLen;
-	uint8_t  aBody[0];
+	uint8_t  aBody[1];
 };
-#pragma pack
+#pragma pack(pop)
 
 
 #define CPACK_BODY_MAX_SIZE (1024 * 64)
@@ -36,7 +36,7 @@ typedef boost::shared_ptr<session> session_ptr;
 using boost::asio::ip::tcp;
 
 //方法以handle_开头的都是回调的的方法
-//所有类似async_read_some / async_write_some 之类的方法都是不能确保缓冲区里面的数据都发送
+//所有类似async_read_some / async_write_some 之类的方法都是不能确保缓冲区里面的数据都发送完
 class session
 	: public boost::enable_shared_from_this<session>
 {
@@ -67,7 +67,7 @@ public:
 	{
 		if (!error)
 		{
-			if (bytes_transferred < sizeof(CPack));
+			if (bytes_transferred < sizeof(CPack))
 			{
 				return;
 			}

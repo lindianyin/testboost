@@ -21,10 +21,12 @@ public:
 	{
 
 	}
+
 private:
 	DbMgr(){}
 private:
 	static boost::shared_ptr<DbMgr> _instance;
 };
 
+//初始化静态成员变量
 boost::shared_ptr<DbMgr> DbMgr::_instance = boost::shared_ptr<DbMgr>();
