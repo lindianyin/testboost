@@ -323,6 +323,16 @@ int main(int argc, char * argv[])
 		std::vector<std::vector<int>> vec1 = s.threeSum(vec); 		
 	}
 
+	{
+		Solution s;
+		std::vector<int> vec = boost::assign::list_of(-1)(2)(1)(-4);
+		int nRet = s.threeSumClosest(vec,1); 		
+	}
+
+	{
+		Solution s;
+		std::vector<std::string> vec = s.letterCombinations("23");
+	}
 
 	boost::asio::io_service io;
 	server s1(io,10241);
