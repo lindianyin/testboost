@@ -101,7 +101,7 @@ int main(int argc, char * argv[])
 	BOOST_LOG_TRIVIAL(trace) << "A trace severity message";
 	BOOST_LOG_TRIVIAL(fatal) << "An error severity message";
 
-	boost::shared_ptr<DbMgr> dbMgr = DbMgr::GetInstance();
+	//boost::shared_ptr<DbMgr> dbMgr = DbMgr::GetInstance();
 
 	std::map<bool,std::shared_ptr<std::vector<int>>> group;
 	auto f = [](int a) -> bool { return a % 2 == 0 ;};
@@ -341,6 +341,13 @@ int main(int argc, char * argv[])
 		Solution s;
 		std::vector<std::string> vec = s.generateParenthesis(3);
 	}
+
+	{
+		Solution s;
+		std::vector<int> vec = boost::assign::list_of(4)(5)(1)(2)(3);
+		bool bRet = s.increasingTriplet(vec);
+	}
+
 
 
 	boost::asio::io_service io;

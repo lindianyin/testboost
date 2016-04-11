@@ -21,7 +21,10 @@ public:
 	{
 
 	}
-
+	~DbMgr()
+	{
+		std::cout << "~DbMgr()" << std::endl;
+	}
 private:
 	DbMgr(){}
 private:
