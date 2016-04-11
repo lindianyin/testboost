@@ -31,7 +31,7 @@
 #include <boost/uuid/random_generator.hpp>
 #include <boost/variant.hpp>
 #include <boost/uuid/uuid_io.hpp>
-
+#include <boost/assert.hpp>
 
 #include <unordered_map>
 #include <unordered_set>
@@ -41,6 +41,9 @@
 
 #include <boost/unordered_map.hpp>
 #include <boost/assign.hpp>
+
+#include <boost/container/string.hpp>
+
 
 #include <list>
 
@@ -333,6 +336,12 @@ int main(int argc, char * argv[])
 		Solution s;
 		std::vector<std::string> vec = s.letterCombinations("23");
 	}
+
+	{
+		Solution s;
+		std::vector<std::string> vec = s.generateParenthesis(3);
+	}
+
 
 	boost::asio::io_service io;
 	server s1(io,10241);
