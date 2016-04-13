@@ -44,6 +44,8 @@
 
 #include <boost/container/string.hpp>
 
+#include <boost/regex.hpp>
+
 
 #include <list>
 
@@ -94,7 +96,14 @@ std::string GetSameBirthDayProbility(const int nNum)
 }
 
 
+struct str{
+	int len;
+	char* s;
+};
 
+struct foo {
+	struct str *a;
+};
 
 int main(int argc, char * argv[])
 {
@@ -346,6 +355,43 @@ int main(int argc, char * argv[])
 		Solution s;
 		std::vector<int> vec = boost::assign::list_of(4)(5)(1)(2)(3);
 		bool bRet = s.increasingTriplet(vec);
+	}
+
+
+	{
+		Solution s;
+		std::vector<int> vec =  boost::assign::list_of(1)(2)(3);
+		std::vector<std::vector<int>> res = s.permute(vec);
+		int ret = s.fac(3);
+	}
+
+
+	{
+		boost::regex pattern(".*?(\\d+).*");
+		boost::cmatch what;
+		bool bret = boost::regex_match("A23B",what,pattern);
+		if(bret){
+
+		}
+
+	}
+
+
+	{
+		Solution s;
+		std::vector<int> vec = boost::assign::list_of(1)(3)(4)(2);
+		s.insert_sort(vec);
+
+
+
+	}
+	{
+		Solution s;
+		std::vector<int> vec = boost::assign::list_of(1)(3)(4)(2)(5);
+		s.MergeSort1(vec,0,4);
+
+
+
 	}
 
 

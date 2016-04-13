@@ -572,5 +572,95 @@ public:
 
 	}
 
+	vector<vector<int> > permute(vector<int> &num) {
+		vector<vector<int> > result;
+		permuteRecursive(num, 0, result);
+		return result;
+	}
+
+	// permute num[begin..end]
+	// invariant: num[0..begin-1] have been fixed/permuted
+	void permuteRecursive(vector<int> &num, int begin, vector<vector<int> > &result)    {
+		if (begin >= num.size()) {
+			// one permutation instance
+			result.push_back(num);
+			return;
+		}
+
+		for (int i = begin; i < num.size(); i++) {
+			swap(num[begin], num[i]);
+			permuteRecursive(num, begin + 1, result);
+			// reset
+			swap(num[begin], num[i]);
+		}
+	}
+
+	int fib(int n){
+		if(n == 1 || n == 2){
+			return 1;
+		}else{
+			return fac(n-1) + fac(n - 2);
+		}
+	}
+	int fac(int n)
+	{
+		if(n == 1){
+			return 1;
+		}else{
+			return n * fac(n-1);
+		}
+	}
+
+	void insert_sort(std::vector<int>& vec){
+		for (int j= 1;j< vec.size();j++)
+		{
+			int key = vec[j];
+			int i = j-1;
+			while(i > 0 && vec[i] > key){
+				vec[i+1] = vec[i];
+				i = i -1;
+			}
+			vec[i+1] = key;
+		}
+	}
+	void Merge(std::vector<int>& a,int p,int q,int r){
+		int n1 = q-p+1;  
+		int n2 = r-q;  
+		int *L = new int[n1+1];  
+		int *R = new int[n2+1];  
+		int i, j, k;  
+
+		for (i=0; i<n1; i++){  
+			L[i] = a[p+i];  
+		}  
+		for (j=0; j<n2; j++){  
+			R[j] = a[q+j+1];  
+		}  
+		L[n1] = INT_MAX;  
+		R[n2] = INT_MAX;  
+
+		for (i=0, j=0, k=p; k<=r; k++) {  
+			if (L[i]<=R[j]){  
+				a[k] = L[i];  
+				i++;  
+			}else{  
+				a[k] = R[j];  
+				j++;  
+			}  
+		}  
+
+		delete []L;  
+		delete []R; 
+	}
+	void MergeSort1(std::vector<int>& a, int p, int r)  
+	{  
+		if (p<r)  
+		{  
+			int q = (p+r)/2;  
+			MergeSort1(a, p, q);  
+			MergeSort1(a, q+1, r);  
+			Merge(a, p, q, r);  
+		}  
+	}
 
 };
