@@ -674,7 +674,6 @@ public:
 
 
 	//45. Jump Game II
-	//
 	int jump(vector<int>& nums) {
 		int n = nums.size(), step = 0, start = 0, end = 0;
 		while (end < n - 1) {
@@ -689,9 +688,5 @@ public:
 		}
 		return step;
 	}
-
-
-
-
 
 };

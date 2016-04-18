@@ -27,6 +27,18 @@
     <ClInclude Include="net.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="poker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="solution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
