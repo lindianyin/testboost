@@ -662,5 +662,31 @@ public:
 			Merge(a, p, q, r);  
 		}  
 	}
+	//55. Jump Game Ì°ÐÄ
+	bool canJump(vector<int>& nums) {
+		int n=nums.size(),reachablesofar=0;
+		for(int i=0;i<n;i++){
+			if(reachablesofar<i) return false;
+			reachablesofar=std::max(reachablesofar, i+nums[i]);
+			if(reachablesofar>=n-1) return true;
+		}
+	}
+	//45. Jump Game II
+	int jump(vector<int>& nums) {
+		int n = nums.size(), step = 0, start = 0, end = 0;
+		while (end < n - 1) {
+			step++; 
+			int maxend = end + 1;
+			for (int i = start; i <= end; i++) {
+				if (i + nums[i] >= n - 1) return step;
+				maxend = max(maxend, i + nums[i]);
+			}
+			start = end + 1;
+			end = maxend;
+		}
+		return step;
+	}
+
+
 
 };
