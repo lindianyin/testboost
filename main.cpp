@@ -46,6 +46,11 @@
 
 #include <boost/regex.hpp>
 
+#include <boost/foreach.hpp>
+
+#include <boost/statechart/state_machine.hpp>
+#include <boost/statechart/simple_state.hpp>
+
 
 #include <list>
 
@@ -104,6 +109,39 @@ struct str{
 struct foo {
 	struct str *a;
 };
+
+template<typename T>
+bool FlatMultiVector(std::vector<std::vector<T>> &src,std::vector<T> &reslt){
+	for (std::vector<std::vector<T>>::iterator it = src.begin();
+		it != src.end();++it){
+			for (std::vector<T>::iterator it1 = it->begin();
+				it1 != it->end();++it1){
+					reslt.push_back(*it1);
+			}
+	}
+	return true;
+}
+
+
+double calc(std::vector<int> &A,std::vector<int> &B){
+	int a = 0;
+	int n = std::min(A.size(),B.size());
+	for (int i = 0; i < n; i++)
+	{
+		a += A[i] * B[i];
+	}
+
+	double x = 0;
+	double y = 0;
+	for (int i=0;i< n;i++)
+	{
+		x += std::pow(A[i],2);
+		y += std::pow(B[i],2);
+	}
+	double result = a / (std::sqrt(x) * std::sqrt(y));
+	return result;
+}
+
 
 int main(int argc, char * argv[])
 {
@@ -391,10 +429,111 @@ int main(int argc, char * argv[])
 		s.MergeSort1(vec,0,4);
 
 
+	}
+	{
+		std::string str = "100";
+		boost::algorithm::trim_if(str,boost::is_any_of("0"));
+		boost::algorithm::ierase_all(str,"0");
+	
+
+		std::vector<int> poker;
+		boost::assign::push_back(poker)(1)(2)(3)(4)(4)(5)(5)(6)(7)(8);
+		
+
+		//顺子(拆牌规则)（拆出所有的5张顺子，然后尽量扩展这些顺子）
+		{
+			std::vector<std::vector<int>> result;
+			std::vector<int> _stack;
+			for (std::vector<int>::iterator it = poker.begin();
+				it != poker.end();++it){
+					if(_stack.empty()){
+						_stack.push_back(*it);
+					}else{
+						if((*it - *_stack.rbegin()) == 1){
+							_stack.push_back(*it);
+						}else if((*it - *_stack.rbegin()) == 0){
+							continue;
+						}
+						else{
+							_stack.clear();
+							_stack.push_back(*it);
+						}
+					}
+					if (_stack.size() == 5){
+						result.push_back(_stack);
+						_stack.clear();
+					}
+			}
+
+		}
+		//对子
+		poker = boost::assign::list_of(2)(2)(2)(2)(3)(3)(3)(4)(4);
+		{
+			std::vector<int> _stack;
+			std::vector<std::vector<int>> _result;
+			for (std::vector<int>::iterator it = poker.begin();
+				it != poker.end();++it){
+					if(_stack.empty()){
+						_stack.push_back(*it);
+					}else{
+						if((*it - *_stack.rbegin()) == 0){
+							_stack.push_back(*it);
+						}
+						else{
+							_stack.pop_back();
+							_stack.push_back(*it);
+						}
+					}
+					if (_stack.size() == 2)
+					{
+						_result.push_back(_stack);
+						_stack.clear();
+					}
+			}
+			_stack.clear();
+			std::vector<std::vector<int>> _result1;
+			for (std::vector<std::vector<int>>::iterator it = _result.begin();
+				it != _result.end();++it){
+					if(_stack.empty()){
+						_stack.push_back(*(it->begin()));
+					}else{
+						if((*it->begin() - *_stack.rbegin()) == 0){
+							continue;
+						}
+						else if((*it->begin() - *_stack.rbegin()) == 1){
+							_stack.push_back(*it->begin());
+						}
+						else{
+							_stack.clear();
+							_stack.push_back(*it->begin());
+						}
+					}
+					if (_stack.size() >= 3)
+					{
+						_result1.push_back(_stack);
+						_stack.clear();
+					}
+			}
+
+		}
+
+		//连对  
+
 
 	}
+	{
+
+		Solution s;
+		std::vector<int> vec = boost::assign::list_of(2)(3)(1)(1)(4);
+		std::vector<int> vec1 = boost::assign::list_of(3)(2)(1)(0)(4);
+		bool bret = s.canJump(vec);
+		bool bret1 = s.canJump(vec1);
+
+		int nRet = s.jump(vec);
 
 
+
+	}
 
 	boost::asio::io_service io;
 	server s1(io,10241);
