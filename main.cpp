@@ -61,8 +61,6 @@
 //#include "poker.h"
 #include "threadpool.h"
 
-#include "boolinq/boolinq.h"
-
 using namespace std;
 using namespace boost;
 
@@ -278,7 +276,7 @@ int main(int argc, char * argv[])
 	{
 		Solution s;
 		int idx  = s.strStr("abcde","cd");
-
+		int ret = s.integerBreak(10);
 	}
 	//boost::shared_ptr<thread_pool> th(new thread_pool());
 	//th->init(3);
@@ -428,7 +426,6 @@ int main(int argc, char * argv[])
 		std::vector<int> vec = boost::assign::list_of(1)(3)(4)(2)(5);
 		s.MergeSort1(vec,0,4);
 
-
 	}
 	{
 		std::string str = "100";
@@ -531,8 +528,10 @@ int main(int argc, char * argv[])
 
 		int nRet = s.jump(vec);
 
-
-
+	}
+	{
+		Solution s;
+		long long llRet = s.DP(81);
 	}
 
 	boost::asio::io_service io;

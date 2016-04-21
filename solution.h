@@ -688,5 +688,37 @@ public:
 		}
 		return step;
 	}
+	//343. Integer Break 
+	int integerBreak(int n) {
+    if(n == 2) return 1;
+    if(n == 3) return 2;
+    vector<int> dp(n+1, 0);
+    dp[2] = 2;
+    dp[3] = 3;
+    for(int i = 4; i <= n; i++){
+        dp[i] = max(dp[i-2] * 2, dp[i-3] * 3);
+    }
+    return dp[n];
+   }
+//爬楼梯问题
+//一个人每次只能走一层楼梯或者两层楼梯，问走到第80层楼梯一共有多少种方法。
+//设DP[i]为走到第i层一共有多少种方法，那么DP[80]即为所求。很显然DP[1]=1, DP[2]=2（走到第一层只有一种方法：就是走一层楼梯；走到第二层有两种方法：走两次一层楼梯或者走一次两层楼梯）。同理，走到第i层楼梯，可以从i-1层走一层，或者从i-2走两层。很容易得到：
+//递推公式：DP[i]=DP[i-1]+DP[i-2]
+//边界条件：DP[1]=1   DP[2]=2
+
+	long long DP(int n)  
+	{
+		static long long dp[81] = {0};
+		if(dp[n])  
+				return dp[n];  
+		if(n == 1)  
+				return 1;  
+		if(n == 2)  
+				return 2;  
+		dp[n] = DP(n-1) + DP(n-2);  
+		return dp[n];     
+	}  
+
+
 
 };
