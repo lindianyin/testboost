@@ -751,8 +751,15 @@ public:
     x = y; y = z; z = w;
     return w = w ^ (w >> 19) ^ t ^ (t >> 8);
 	}
+	
+	//使用nullptr的作用就是这样的
+	void overload(char *p){
+		std::cout << "char *" << std::endl;
+	}
 
+	void overload(int p){
+		std::cout << "ssss" << std::endl;
 
-
+	}
 
 };

@@ -55,8 +55,6 @@
 #include <list>
 
 
-
-
 #include "solution.h"
 //#include "poker.h"
 #include "threadpool.h"
@@ -527,6 +525,11 @@ int main(int argc, char * argv[])
 		bool bret1 = s.canJump(vec1);
 
 		int nRet = s.jump(vec);
+		std::vector<boost::tuple<int,int>> t = boost::assign::tuple_list_of(1,2)(3,4);
+	   
+
+
+
 
 	}
 	{
@@ -540,8 +543,10 @@ int main(int argc, char * argv[])
 		//int nRet1 = s.fibb1(50);
 		s.rand();
 		s.rand();
-	}
 
+		s.overload(nullptr);
+	}
+	
 
 
 	boost::asio::io_service io;
