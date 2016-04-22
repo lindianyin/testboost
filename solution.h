@@ -718,6 +718,40 @@ public:
 		dp[n] = DP(n-1) + DP(n-2);  
 		return dp[n];     
 	}  
+	//322. Coin Change
+	int coinChange(vector<int>& coins, int amount) {
+		      
+  }
+
+	int fibb(int n){
+		if(0 == n || 1 == n){
+			return 1;
+		}
+		return fibb(n -1) + fibb(n - 2);
+	}
+
+	int fibb1(int n){
+		static std::map<int,int> _map;
+		if(_map.count(n) == 0){
+			_map[n] = fibb1(n-1) + fibb1(n-2);
+		}
+		return _map[n];
+	}
+
+	void calc(/*std::vector<int> &vec,std::vector<int> res*/){
+		boost::mt19937 rng;
+		boost::uniform_int<int> uniint(0,99);
+		int nRand = uniint(rng);
+	}
+
+	//xorshift Éú³ÉÆ÷
+	uint32_t rand(){
+		static uint32_t x =1, y=2, z = 3, w = 4;
+		uint32_t t = x ^ (x << 11);
+    x = y; y = z; z = w;
+    return w = w ^ (w >> 19) ^ t ^ (t >> 8);
+	}
+
 
 
 

@@ -534,6 +534,16 @@ int main(int argc, char * argv[])
 		long long llRet = s.DP(81);
 	}
 
+	{
+		Solution s;
+		//int nRet = s.fibb(50);
+		//int nRet1 = s.fibb1(50);
+		s.rand();
+		s.rand();
+	}
+
+
+
 	boost::asio::io_service io;
 	server s1(io,10241);
 	while(true)
