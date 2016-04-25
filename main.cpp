@@ -32,6 +32,7 @@
 #include <boost/variant.hpp>
 #include <boost/uuid/uuid_io.hpp>
 #include <boost/assert.hpp>
+#include <boost/atomic.hpp>
 
 #include <unordered_map>
 #include <unordered_set>
@@ -52,7 +53,14 @@
 #include <boost/statechart/simple_state.hpp>
 
 
+
+#include <boost/archive/iterators/binary_from_base64.hpp>
+#include <boost/archive/iterators/base64_from_binary.hpp>
+#include <boost/archive/iterators/transform_width.hpp>
+#include <boost/algorithm/string.hpp>
+
 #include <list>
+#include <bitset>
 
 
 #include "solution.h"
@@ -137,6 +145,77 @@ double calc(std::vector<int> &A,std::vector<int> &B){
 	double result = a / (std::sqrt(x) * std::sqrt(y));
 	return result;
 }
+
+struct Player
+{
+	union 
+	{
+		struct 
+		{
+			int  nAge;
+			char szName[64];
+		};
+		char byReserve[1024];
+	};
+};
+
+
+class Score
+{
+public:
+	bool operator < (const Score &s) const {
+		if(this->score == s.score){
+			return this->name < s.name;
+		}
+		return this->score < s.score;
+	}
+	std::string name;
+	int score;
+};
+
+
+//base64算法
+const std::string base64_padding[] = {"", "==","="};
+std::string base64_encode(const std::string& s) {
+  namespace bai = boost::archive::iterators;
+
+  std::stringstream os;
+
+  // convert binary values to base64 characters
+  typedef bai::base64_from_binary
+  // retrieve 6 bit integers from a sequence of 8 bit bytes
+  <bai::transform_width<const char *, 6, 8> > base64_enc; // compose all the above operations in to a new iterator
+
+  std::copy(base64_enc(s.c_str()), base64_enc(s.c_str() + s.size()),
+            std::ostream_iterator<char>(os));
+
+  os << base64_padding[s.size() % 3];
+  return os.str();
+}
+
+std::string base64_decode(const std::string& s) {
+  namespace bai = boost::archive::iterators;
+
+  std::stringstream os;
+
+  typedef bai::transform_width<bai::binary_from_base64<const char *>, 8, 6> base64_dec;
+
+  unsigned int size = s.size();
+
+  // Remove the padding characters, cf. https://svn.boost.org/trac/boost/ticket/5629
+  if (size && s[size - 1] == '=') {
+    --size;
+    if (size && s[size - 1] == '=') --size;
+  }
+  if (size == 0) return std::string();
+
+  std::copy(base64_dec(s.data()), base64_dec(s.data() + size),
+            std::ostream_iterator<char>(os));
+
+  return os.str();
+}
+
+
 
 
 int main(int argc, char * argv[])
@@ -545,15 +624,65 @@ int main(int argc, char * argv[])
 		s.rand();
 
 		s.overload(nullptr);
+
+		struct Player p;
+		p.nAge = 10;
+		sprintf(p.szName,"%s","hello");
+
+		char *pp = p.byReserve;
+
 	}
 	
+	{
+		Solution s;
+		for(int i=1;i<=10;i++){
+			s.numSquares(i);
+		}
+		std::set<Score> _set;
+		Score sc;
+		sc.name = "hello";
+		sc.score = 20;
+		Score sc1;
+		sc1.name = "helsso";
+		sc1.score = 10;
+		_set.insert(sc);
+		_set.insert(sc1);
 
+
+	}
+	{
+		FILE *f = fopen("./Log/log.log","a+");
+		char buff[1024];
+		memset(buff,0,1024);
+		strcpy(buff,"hello");
+		fwrite("hello",1,strlen(buff),f);
+		fclose(f);
+	
+	}
+
+	{
+		std::string str = "aGVsbG93b3JsZA==";
+		std::string str1 = "helloworld";
+		std::string str2 = base64_encode(str1);
+		std::string str3 = base64_decode(str2);
+
+
+
+
+
+	}
 
 	boost::asio::io_service io;
 	server s1(io,10241);
+	
+	int a = 0;
 	while(true)
 	{
+		io.post([&]()->void{
+			a += 2;
+		});
 		io.poll_one();
+
 	}
 
 	return 0;
