@@ -20,14 +20,14 @@ if(!(e))								\
 
 
 
-using namespace std;
+//using namespace std;
 class Solution {
 public:
 	//1. Two Sum
-	vector<int> twoSum(vector<int> &numbers, int target)
+	std::vector<int> twoSum(std::vector<int> &numbers, int target)
 	{
 		 std::unordered_map<int, int> hash;// val idx
-		 vector<int> result;
+		 std::vector<int> result;
 		 for (int i=0;i<numbers.size();i++)
 		 {
 			 int val = target - numbers[i];
@@ -41,12 +41,12 @@ public:
 		 }
 	}
 	//2. Add Two Numbers
-	list<int> addTwoNumbers(list<int> a, list<int> b) 
+	std::list<int> addTwoNumbers(std::list<int> a, std::list<int> b) 
 	{
 		a.reverse();
 		b.reverse();
 		int nMaxSize = std::max(a.size(),b.size());
-		list<int> result(nMaxSize+1,0);
+		std::list<int> result(nMaxSize+1,0);
 		for (int i=0;i<(nMaxSize-a.size());i++)
 		{
 			a.push_back(0);
@@ -57,8 +57,8 @@ public:
 		}
 
 		int nSetp = 0;
-		list<int>::iterator itr = result.begin();
-		for (list<int>::iterator ita = a.begin(),itb = b.begin();
+		std::list<int>::iterator itr = result.begin();
+		for (std::list<int>::iterator ita = a.begin(),itb = b.begin();
 				ita != a.end()&& itb != b.end();++ita,++itb)
 		{
 			int nRest = (*ita + *itb + nSetp) % 10;
@@ -78,7 +78,7 @@ public:
 		{
 			return 0;
 		}
-		map<char, int> map;
+		std::map<char, int> map;
 		int max=0;
 		for (int i=0, j=0; i<s.length(); ++i){
 			if (map.count(s[i]) != 0){
@@ -93,9 +93,9 @@ public:
 	// 1 3 5  2 4 6 7
 	// 4 / 2 == 2   2-1 2 	  
 	//	  
-	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)
+	double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2)
 	{
-		vector<int> vec(nums1.size() + nums2.size());
+		std::vector<int> vec(nums1.size() + nums2.size());
 		int idx1=0,idx2 = 0;
 		int idx12 = 0;
 		while (idx1 < nums1.size() && idx2 < nums2.size())
@@ -121,7 +121,7 @@ public:
 		}
 	}
 
-	bool isPalindrome(string s, int startIndex, int endIndex)
+	bool isPalindrome(std::string s, int startIndex, int endIndex)
 	{
 		for(int i = startIndex, j = endIndex; i <= j; i++, j--)
 		{
@@ -134,7 +134,7 @@ public:
 	}
 
 
-	string longestPalindrome(string s) {
+	std::string longestPalindrome(std::string s) {
 		if(s.size() < 2)
 		{
 			return s;
@@ -173,7 +173,7 @@ public:
 		return (res<INT_MIN || res>INT_MAX) ? 0 : res;
 	}
 	//123
-	int myAtoi(string str) {
+	int myAtoi(std::string str) {
 		int sign = 1;
 		int base = 0;
 		int i = 0;
@@ -203,7 +203,7 @@ public:
 		return base * sign;
 	}
 
-	int romanToInt(string s) {
+	int romanToInt(std::string s) {
 		std::map<char,int> T;
 		T['I'] = 1;
 		T['V'] = 5;
@@ -230,8 +230,8 @@ public:
 	}
 
 	//14. Longest Common Prefix
-	string longestCommonPrefix(vector<string>& strs) {
-		string prefix = "";
+	std::string longestCommonPrefix(std::vector<std::string>& strs) {
+		std::string prefix = "";
 		for(int idx=0; strs.size()>0; prefix+=strs[0][idx], idx++)
 			for(int i=0; i<strs.size(); i++)
 				if(idx >= strs[i].size() ||(i > 0 && strs[i][idx] != strs[i-1][idx]))
@@ -240,7 +240,7 @@ public:
 
 	}
 	//20. Valid Parentheses
-	bool isValid(string s) {
+	bool isValid(std::string s) {
 		unsigned char T[256];
 		T['('] = ')';
 		T[')'] = '(';
@@ -271,7 +271,7 @@ public:
 		return stack.size() == 0;
 	}
 	//26. Remove Duplicates from Sorted Array
-	int removeDuplicates(vector<int>& nums){
+	int removeDuplicates(std::vector<int>& nums){
 		int count = 0;
 		int n = nums.size();
 		for(int i = 1; i < n; i++){
@@ -287,7 +287,7 @@ public:
 		return n - count;
 	}
 	//27. Remove Element
-	int removeElement(vector<int>& nums, int val) {
+	int removeElement(std::vector<int>& nums, int val) {
 // 		for (vector<int>::iterator it = nums.begin();
 // 			it != nums.end();)
 // 		{
@@ -313,7 +313,7 @@ public:
 	}
 
 	//28. Implement strStr()
-	int strStr(string str, string substr) {
+	int strStr(std::string str, std::string substr) {
 		for (int i = 0; i < str.size(); i++)
 		{
 			int count = 0;
@@ -354,7 +354,7 @@ public:
 // 		isMatch("aa", ".*") ¡ú true
 // 		isMatch("ab", ".*") ¡ú true
 // 		isMatch("aab", "c*a*b") ¡ú true
-	bool isMatch(string s, string p) {
+	bool isMatch(std::string s, std::string p) {
 		if (p.empty())
 		{
 			return s.empty();
@@ -411,7 +411,7 @@ public:
 	}
 
 	//58. Length of Last Word
-	int lengthOfLastWord(string s) {
+	int lengthOfLastWord(std::string s) {
 		int j = s.size() - 1;
 		while(s[j] == ' ')
 		{
@@ -426,7 +426,7 @@ public:
 	}
 
 	//15. 3Sum
-	vector<vector<int>> threeSum(vector<int>& num) {
+	std::vector<std::vector<int>> threeSum(std::vector<int>& num) {
 // 		vector<vector<int>> vec;
 // 		for (int i=0;i<num.size();i++)
 // 		{
@@ -446,7 +446,7 @@ public:
 // 			}
 // 		}
 //    return vec;
-		vector<vector<int> > ans;
+		std::vector<std::vector<int> > ans;
 		int i, j, k, n = num.size();
 		sort(num.begin(), num.begin() + n);
 		for (i = 0; i < n; i++){
@@ -457,7 +457,7 @@ public:
 				if (num[i] + num[j] + num[k] > 0) k--;
 				else if (num[i] + num[j] + num[k] < 0) j++;
 				else{
-					vector<int> tmp;
+					std::vector<int> tmp;
 					tmp.push_back(num[i]);
 					tmp.push_back(num[j]);
 					tmp.push_back(num[k]);
@@ -472,17 +472,17 @@ public:
 	}
 
 	//4Sum
-	vector<vector<int>> fourSum(vector<int>& nums, int target) {
+	std::vector<std::vector<int>> fourSum(std::vector<int>& nums, int target) {
 
 	}
 
 
 
 	//16. 3Sum Closest
-	int threeSumClosest(vector<int>& num, int target) {
+	int threeSumClosest(std::vector<int>& num, int target) {
 		int ans = 0;
 		int i, j, k, n = num.size();
-		sort(num.begin(), num.begin() + n);
+		std::sort(num.begin(), num.begin() + n);
 		ans = num[0] + num[1] + num[2];
 		for (i = 0; i < n; i++){
 			if (i > 0 && num[i] == num[i - 1]) continue;
@@ -501,18 +501,18 @@ public:
 	}
 
 	//17. Letter Combinations of a Phone Number
-	vector<string> letterCombinations(string digits) {
-		vector<string> result;
-		if(digits.empty()) return vector<string>();
-		static const vector<string> v = 
+	std::vector<std::string> letterCombinations(std::string digits) {
+		std::vector<std::string> result;
+		if(digits.empty()) return std::vector<std::string>();
+		static const std::vector<std::string> v = 
 		boost::assign::list_of("")("")("abc")("def")("ghi")("jkl")("mno")("pqrs")("tuv")("wxyz");
 		result.push_back("");   // add a seed for the initial case
 		for(int i = 0 ; i < digits.size(); ++i) {
 			int num = digits[i]-'0';
 			if(num < 0 || num > 9) break;
-			const string& candidate = v[num];
+			const std::string& candidate = v[num];
 			if(candidate.empty()) continue;
-			vector<string> tmp;
+			std::vector<std::string> tmp;
 			for(int j = 0 ; j < candidate.size() ; ++j) {
 				for(int k = 0 ; k < result.size() ; ++k) {
 					tmp.push_back(result[k] + candidate[j]);
@@ -524,12 +524,12 @@ public:
 	}
 
 	//22. Generate Parentheses
-	vector<string> generateParenthesis(int n) {
-		vector<string> res;
+	std::vector<std::string> generateParenthesis(int n) {
+		std::vector<std::string> res;
 		addingpar(res, "", n, 0);
 		return res;
 	}
-	void addingpar(vector<string> &v, string str, int n, int m){
+	void addingpar(std::vector<std::string> &v, std::string str, int n, int m){
 		if(n==0 && m==0) {
 			v.push_back(str);
 			return;
@@ -540,7 +540,7 @@ public:
 
 
 	//334. Increasing Triplet Subsequence
-	bool increasingTriplet(vector<int>& nums) {
+	bool increasingTriplet(std::vector<int>& nums) {
 // 		int n = x.size();
 // 		for (int i=0;i<n;i++)
 // 		{
@@ -572,15 +572,15 @@ public:
 
 	}
 
-	vector<vector<int> > permute(vector<int> &num) {
-		vector<vector<int> > result;
+	std::vector<std::vector<int> > permute(std::vector<int> &num) {
+		std::vector<std::vector<int> > result;
 		permuteRecursive(num, 0, result);
 		return result;
 	}
 
 	// permute num[begin..end]
 	// invariant: num[0..begin-1] have been fixed/permuted
-	void permuteRecursive(vector<int> &num, int begin, vector<vector<int> > &result)    {
+	void permuteRecursive(std::vector<int> &num, int begin, std::vector<std::vector<int> > &result)    {
 		if (begin >= num.size()) {
 			// one permutation instance
 			result.push_back(num);
@@ -588,10 +588,10 @@ public:
 		}
 
 		for (int i = begin; i < num.size(); i++) {
-			swap(num[begin], num[i]);
+			std::swap(num[begin], num[i]);
 			permuteRecursive(num, begin + 1, result);
 			// reset
-			swap(num[begin], num[i]);
+			std::swap(num[begin], num[i]);
 		}
 	}
 
@@ -663,7 +663,7 @@ public:
 		}  
 	}
 	//55. Jump Game Ì°ÐÄ
-	bool canJump(vector<int>& nums) {
+	bool canJump(std::vector<int>& nums) {
 		int n=nums.size(),reachablesofar=0;
 		for(int i=0;i<n;i++){
 			if(reachablesofar<i) return false;
@@ -674,14 +674,14 @@ public:
 
 
 	//45. Jump Game II
-	int jump(vector<int>& nums) {
+	int jump(std::vector<int>& nums) {
 		int n = nums.size(), step = 0, start = 0, end = 0;
 		while (end < n - 1) {
 			step++; 
 			int maxend = end + 1;
 			for (int i = start; i <= end; i++) {
 				if (i + nums[i] >= n - 1) return step;
-				maxend = max(maxend, i + nums[i]);
+				maxend = std::max(maxend, i + nums[i]);
 			}
 			start = end + 1;
 			end = maxend;
@@ -692,11 +692,11 @@ public:
 	int integerBreak(int n) {
     if(n == 2) return 1;
     if(n == 3) return 2;
-    vector<int> dp(n+1, 0);
+    std::vector<int> dp(n+1, 0);
     dp[2] = 2;
     dp[3] = 3;
     for(int i = 4; i <= n; i++){
-        dp[i] = max(dp[i-2] * 2, dp[i-3] * 3);
+        dp[i] = std::max(dp[i-2] * 2, dp[i-3] * 3);
     }
     return dp[n];
    }
@@ -719,7 +719,7 @@ public:
 		return dp[n];     
 	}  
 	//322. Coin Change
-	int coinChange(vector<int>& coins, int amount) {
+	int coinChange(std::vector<int>& coins, int amount) {
 		      
   }
 
@@ -771,7 +771,7 @@ public:
 
       // cntPerfectSquares[i] = the least number of perfect square numbers 
       // which sum to i. Note that cntPerfectSquares[0] is 0.
-      vector<int> cntPerfectSquares(n + 1, INT_MAX);
+      std::vector<int> cntPerfectSquares(n + 1, INT_MAX);
       cntPerfectSquares[0] = 0;
       for (int i = 1; i <= n; i++)
       {
@@ -780,7 +780,7 @@ public:
           for (int j = 1; j*j <= i; j++)
           {
               cntPerfectSquares[i] = 
-                  min(cntPerfectSquares[i], cntPerfectSquares[i - j*j] + 1);
+                  std::min(cntPerfectSquares[i], cntPerfectSquares[i - j*j] + 1);
           }
       }
 

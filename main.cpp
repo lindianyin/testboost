@@ -59,6 +59,14 @@
 #include <boost/archive/iterators/transform_width.hpp>
 #include <boost/algorithm/string.hpp>
 
+#include <boost/uuid/sha1.hpp> 
+
+
+#include <boost/property_tree/json_parser.hpp> 
+
+
+#include <memory>
+
 #include <list>
 #include <bitset>
 
@@ -67,11 +75,16 @@
 //#include "poker.h"
 #include "threadpool.h"
 
-using namespace std;
-using namespace boost;
+//using namespace std;
+//using namespace boost;
 
 
 #include "singleton.h"
+
+extern "C" {
+	#include "adlist.h"
+}
+
 
 
 template<typename K, typename V>
@@ -383,7 +396,7 @@ int main(int argc, char * argv[])
 		int v = 0;
 		bool bRet = TryGetValue(map1,k,v);
 
-		const stack<string> names = boost::assign::list_of( "Mr. Foo" )( "Mr. Bar")( "Mrs. FooBar" ).to_adapter();
+		const std::stack<std::string> names = boost::assign::list_of( "Mr. Foo" )( "Mr. Bar")( "Mrs. FooBar" ).to_adapter();
 
 
 
@@ -671,6 +684,62 @@ int main(int argc, char * argv[])
 
 
 	}
+	{
+		struct list *l  = listCreate();
+		for (int i = 0; i < 5; i++)
+		{
+			int *v = new int(i);
+			listAddNodeTail(l,v);
+		}
+
+		struct listIter *iter = listGetIterator(l,AL_START_HEAD);
+		struct listNode *node = NULL;
+		while ((node = listNext(iter)) != NULL){
+			void *v = listNodeValue(node);
+			if(*(int*)v == 3){
+				delete v;
+				listDelNode(l,node);
+			}
+		}
+	}
+
+
+
+	{
+		std::shared_ptr<struct list> sp_list(new struct list());
+		
+		boost::variant<int,double,float,long long,struct list,std::string> v;
+		v = "hello";
+		v = 1;
+		v = 2LL;
+		long long v1 = boost::get<long long>(v);
+
+		boost::any any;
+		any = 10;
+		any = std::string("hello");
+		std::string v2 = boost::any_cast<std::string>(any);
+
+
+
+
+	}
+
+	{
+		std::string strJson = "{\"root\":{\"a\":2}}";
+		std::stringstream ss;
+		ss << strJson;
+		boost::property_tree::ptree pt;
+		boost::property_tree::json_parser::read_json(ss,pt);
+		int a = pt.get<int>("root.a");
+
+
+
+	
+	
+	}
+
+
+
 
 	boost::asio::io_service io;
 	server s1(io,10241);
