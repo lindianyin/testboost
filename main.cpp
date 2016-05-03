@@ -63,12 +63,19 @@
 
 
 #include <boost/property_tree/json_parser.hpp> 
+#include <boost/function.hpp>
+
+#include <boost/interprocess/managed_shared_memory.hpp>
+
 
 
 #include <memory>
 
 #include <list>
 #include <bitset>
+
+#include <stdlib.h>	
+
 
 
 #include "solution.h"
@@ -83,6 +90,8 @@
 
 extern "C" {
 	#include "adlist.h"
+  //#include "sds.h"
+  #include "zipmap.h"
 }
 
 
@@ -720,7 +729,7 @@ int main(int argc, char * argv[])
 		std::string v2 = boost::any_cast<std::string>(any);
 
 
-
+		
 
 	}
 
@@ -731,13 +740,31 @@ int main(int argc, char * argv[])
 		boost::property_tree::ptree pt;
 		boost::property_tree::json_parser::read_json(ss,pt);
 		int a = pt.get<int>("root.a");
-
-
+		boost::function<std::string (std::string)> base64 = base64_encode;
+		std::string str = base64("hello");
 
 	
 	
 	}
 
+	{
+		//sds s = sdscatprintf(sdsempty(),"%i",1024);
+		//sdsfree(s);
+		
+		zipmapTest(0,NULL);
+		void *x = malloc(0);
+		void *x1 = realloc(x,1024);
+		free(x1);
+		char sztime1[1];
+		char sztime2[1024];
+		int ret = sscanf("2006:03:18 - 2006:04:18", "%s - %s", sztime1, sztime2); 
+
+		sscanf("hello, world","%[]",sztime1,sztime2);
+
+
+
+		x = x;
+	}
 
 
 
