@@ -787,8 +787,27 @@ public:
       return cntPerfectSquares.back();
   }
 
+	/*欧几里德算法：辗转求余
+		原理： gcd(a,b)=gcd(b,a mod b)
+		当b为0时，两数的最大公约数即为a
+  */
+	int gcd(int a,int b){
+		if(a<b){
+			std::swap(a,b);
+		}
+		return b == 0 ? a : gcd(b,a % b);
+	}
 
-
+	int gcd1(int m,int n){
+		while(true){
+			int r = m % n;
+			if(0 == r){
+				return n;
+			}
+			m = n;
+			n = r;
+		}
+	}
 
 
 };

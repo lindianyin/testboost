@@ -67,7 +67,7 @@
 
 #include <boost/interprocess/managed_shared_memory.hpp>
 
-
+#include <sys/timeb.h>
 
 #include <memory>
 
@@ -748,6 +748,14 @@ int main(int argc, char * argv[])
 	}
 
 	{
+		Solution s;
+		int res = s.gcd1(10,15);
+		BOOST_ASSERT(res == 5);
+	
+	}
+
+
+	{
 		//sds s = sdscatprintf(sdsempty(),"%i",1024);
 		//sdsfree(s);
 		
@@ -761,7 +769,19 @@ int main(int argc, char * argv[])
 
 		sscanf("hello, world","%[]",sztime1,sztime2);
 
+		char *p = "hello";
+		if(fwrite(p,strlen(p)+1,1,stdout) == 0){
+			perror("fwrite");
+		} 
+		fflush(stdout);
 
+
+		FILE *fp = fopen("test_asio.pid","w");
+		if (fp) {
+        fprintf(fp,"%d\n",(int)getpid());
+        fclose(fp);
+    }
+		
 
 		x = x;
 	}
