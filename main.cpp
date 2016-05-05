@@ -833,10 +833,10 @@ int main(int argc, char * argv[])
 				std::cout << "申请内存失败" << std::endl;
 				return 0;
 			}
-			char buf[4096];
-			std::cin >> buf;
-			strcpy((char*)lpMapAddress,buf);
-			int i = 0;
+			//char buf[4096];
+			//std::cin >> buf;
+			//strcpy((char*)lpMapAddress,buf);
+			//int i = 0;
 			
 
 			UnmapViewOfFile(lpMapAddress);
@@ -844,6 +844,37 @@ int main(int argc, char * argv[])
 			::CloseHandle(hFile);
 	
 	}
+
+
+	{
+		char sentence[]="This   is,b a sentence with 7 tokens";
+    char *tokenPtr=strtok(sentence," ,");
+    while(tokenPtr!=NULL){
+        std::cout<<tokenPtr<<'\n';
+        tokenPtr=strtok(NULL," ,");
+    }
+		std::string str = " \r\nhello world \r\n";
+		char *c = " \r\n";
+		size_t start = str.find_first_not_of(c);
+		size_t end = str.find_last_not_of(c);
+		std::string str1 = str.substr(start,end - start + 1);
+
+
+	
+	
+	}
+
+
+	{
+		std::vector<int> vec = boost::assign::list_of(1)(2)(3);
+		std::vector<int> vec1;// = boost::assign::list_of(1)(2)(3);
+	
+		vec.insert(vec.end(),vec1.begin(),vec1.end());
+	
+	}
+
+
+
 
 	boost::asio::io_service io;
 	server s1(io,10241);
