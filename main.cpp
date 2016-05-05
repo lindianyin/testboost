@@ -756,6 +756,18 @@ int main(int argc, char * argv[])
 
 
 	{
+		long long x = 1024;
+		long long *px = &x;
+		char buff[256];
+		int len = _snprintf(buff,sizeof(buff),"%p",px);
+		BOOST_ASSERT(len >=0 && len < sizeof(buff) && "buffer is not enough or format is invalid");
+
+	}
+
+
+
+
+	{
 		//sds s = sdscatprintf(sdsempty(),"%i",1024);
 		//sdsfree(s);
 		
@@ -786,7 +798,52 @@ int main(int argc, char * argv[])
 		x = x;
 	}
 
+	{
 
+   // Open the file that we want to map.
+   // 注意请在c盘，自己创建一个kuan.txt文件，并写入内容
+   HANDLE hFile = ::CreateFile(L"C:\\kuan.txt",
+      GENERIC_READ | GENERIC_WRITE,
+      0,
+      NULL,
+      OPEN_ALWAYS,
+      FILE_ATTRIBUTE_NORMAL,
+      NULL);
+
+			HANDLE hMapFile =CreateFileMapping(
+				hFile,
+				NULL,
+				PAGE_READWRITE,
+				0,
+				4*1024,
+				L"ShareFile"
+				);
+			if(hMapFile == NULL){
+				std::cout << "分配内存空间出错" << std::endl;
+				return 0;
+			}
+			LPVOID lpMapAddress = MapViewOfFile(
+				hMapFile,
+				FILE_MAP_ALL_ACCESS,
+				0,
+				0,
+				0
+				);
+			if(lpMapAddress ==  NULL){
+				std::cout << "申请内存失败" << std::endl;
+				return 0;
+			}
+			char buf[4096];
+			std::cin >> buf;
+			strcpy((char*)lpMapAddress,buf);
+			int i = 0;
+			
+
+			UnmapViewOfFile(lpMapAddress);
+			::CloseHandle(hMapFile);
+			::CloseHandle(hFile);
+	
+	}
 
 	boost::asio::io_service io;
 	server s1(io,10241);
