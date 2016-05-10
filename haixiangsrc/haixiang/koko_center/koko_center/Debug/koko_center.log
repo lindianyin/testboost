@@ -1,0 +1,22 @@
+﻿项目文件包含 ToolsVersion="14.0" 设置，但此工具集未知或缺失。您可以通过为此工具集安装相应的 .NET Framework 来解决此问题。将项目视为具有 ToolsVersion="4.0" 设置。
+  koko_socket.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  player.cpp
+  msg_client.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  koko_center.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  md5.cpp
+  正在生成代码...
+LINK : warning LNK4098: 默认库“MSVCRTD”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+koko_center.obj : error LNK2019: 无法解析的外部符号 "int __cdecl sync_user_item(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)" (?sync_user_item@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)，该符号在函数 "public: virtual int __thiscall task_on_5sec::routine(void)" (?routine@task_on_5sec@@UAEHXZ) 中被引用
+D:\work\project\haixiang\koko_center\Debug\koko_center.exe : fatal error LNK1120: 1 个无法解析的外部命令

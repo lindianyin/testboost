@@ -1,0 +1,25 @@
+﻿  Building Custom Rule D:/work/project/haixiang/xml/CMakeLists.txt
+  CMake does not need to re-run because D:\work\project\haixiang\xml\build\CMakeFiles\generate.stamp is up-to-date.
+  simple_xml_parse.cpp
+D:\work\project\haixiang\xml\simple_xml_parse.cpp(317): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+D:\work\project\haixiang\xml\simple_xml_parse.cpp(323): warning C4018: “<”: 有符号/无符号不匹配
+D:\work\project\haixiang\xml\simple_xml_parse.cpp(352): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\algorithm(965): warning C4996: 'std::_Swap_ranges': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\algorithm(950) : 参见“std::_Swap_ranges”的声明
+          C:\boost_1_55_0\boost/uuid/uuid.hpp(151): 参见对正在编译的函数 模板 实例化“_FwdIt2 std::swap_ranges<boost::uuids::uuid::iterator,boost::uuids::uuid::iterator>(_FwdIt1,_FwdIt1,_FwdIt2)”的引用
+          with
+          [
+              _FwdIt2=boost::uuids::uuid::iterator,
+              _FwdIt1=boost::uuids::uuid::iterator
+          ]
+D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xutility(3017): warning C4996: 'std::_Equal1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xutility(3002) : 参见“std::_Equal1”的声明
+          C:\boost_1_55_0\boost/uuid/uuid.hpp(161): 参见对正在编译的函数 模板 实例化“bool std::equal<boost::uuids::uuid::const_iterator,boost::uuids::uuid::const_iterator>(_InIt1,_InIt1,_InIt2)”的引用
+          with
+          [
+              _InIt1=boost::uuids::uuid::const_iterator,
+              _InIt2=boost::uuids::uuid::const_iterator
+          ]
+  xml.vcxproj -> D:\work\project\haixiang\libs\Debug\xml.lib

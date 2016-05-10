@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<path>
+		<name>fishvip\move_path\path1.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path2.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path3.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path4.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+        <path>
+		<name>fishvip\move_path\path5.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path6.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path7.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path8.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path9.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path10.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path11.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path12.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+        <path>
+		<name>fishvip\move_path\path13.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path14.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path15.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>400</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path16.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+        <path>
+		<name>fishvip\move_path\path17.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path18.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path19.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                 <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path20.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+        <path>
+		<name>fishvip\move_path\path21.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path22.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path23.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                 <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path24.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+        <path>
+		<name>fishvip\move_path\path25.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+                <exclude>F021,F022,F024,F025,F027,F028,D030,D052,F027,</exclude>
+		<rate>300</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path26.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+		<rate>200</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+        <path>
+		<name>fishvip\move_path\path27.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+		<rate>200</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path28.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+		<rate>200</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+         <path>
+		<name>fishvip\move_path\path29.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+		<rate>200</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+	<path>
+		<name>fishvip\move_path\path30.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+		<rate>200</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+
+</config>

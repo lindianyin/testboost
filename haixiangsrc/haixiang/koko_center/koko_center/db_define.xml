@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<main_table>
+		<name>account_summary</name>
+		<keyfeild type="1" dbf="uid"/>
+		<feilds>
+			<feild type="0" dbf="gold">_$GOLD$</feild>	<!--type=0表示是数字类型-->
+			<feild type="0" dbf="iid" uniq="1">_IID</feild>
+			<feild type="1" dbf="nickname">_UNAME</feild> <!--type=1表示是字符类型-->
+			<feild type="1" dbf="uname" uniq="1">_ACCNAME</feild>
+			<feild type="1" dbf="pwd">_ACCPWD</feild>
+		</feilds>
+	</main_table>
+	<cache_table>
+		<name>account</name>
+	</cache_table>
+</config>

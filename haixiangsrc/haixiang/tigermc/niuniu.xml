@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<php_sign_key_>z5u%wi31^_#h=284u%keg+ovc+j6!69wpwqe#u9*st5os5$=j2</php_sign_key_>
+	<db_port_>3306</db_port_>
+	<db_host_>192.168.17.230</db_host_>
+	<db_user_>hunter</db_user_>
+	<db_pwd_>V@!*A#x!1cop%re0</db_pwd_>
+	<db_name_>tigermc</db_name_>
+
+	<accdb_port_>3306</accdb_port_>
+	<accdb_host_>192.168.17.230</accdb_host_>
+	<accdb_user_>hunter</accdb_user_>
+	<accdb_pwd_>V@!*A#x!1cop%re0</accdb_pwd_>
+	<accdb_name_>account_server</accdb_name_>
+
+	<client_port_>15123</client_port_> <!--15111-->
+
+	<cache_ip_>192.168.17.59</cache_ip_>
+	<cache_port_>9999</cache_port_>
+
+	<world_ip_>192.168.17.238</world_ip_>
+	<world_port_>10001</world_port_>
+	<world_id_>12</world_id_>
+
+	<alert_email_set_>-10000</alert_email_set_>
+	<register_fee_>10000</register_fee_>
+	<register_account_reward_>10000</register_account_reward_>
+</config>

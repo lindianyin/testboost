@@ -1,0 +1,23 @@
+﻿  Database.cpp
+D:\work\project\haixiang\mysqlwrapped\..\dependencies\mysql_win_include\config-win.h(29): warning C4005: “_CRT_SECURE_NO_DEPRECATE”: 宏重定义
+          C:\boost_1_55_0\boost/move/detail/config_begin.hpp(15) : 参见“_CRT_SECURE_NO_DEPRECATE”的前一个定义
+  enum_t.cpp
+..\enum_t.cpp(46): warning C4244: “参数”: 从“uint64_t”转换到“const unsigned short”，可能丢失数据
+..\enum_t.cpp(53): warning C4244: “=”: 从“unsigned __int64”转换到“unsigned short”，可能丢失数据
+..\enum_t.cpp(71): warning C4244: “参数”: 从“uint64_t”转换到“const unsigned short”，可能丢失数据
+..\enum_t.cpp(86): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(249) : 参见“stricmp”的声明
+..\enum_t.cpp(106): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(249) : 参见“stricmp”的声明
+  Query.cpp
+D:\work\project\haixiang\mysqlwrapped\..\dependencies\mysql_win_include\config-win.h(24): warning C4005: “_WIN32_WINNT”: 宏重定义
+          C:\Program Files (x86)\Windows Kits\8.0\Include\shared\sdkddkver.h(196) : 参见“_WIN32_WINNT”的前一个定义
+D:\work\project\haixiang\mysqlwrapped\..\dependencies\mysql_win_include\config-win.h(29): warning C4005: “_CRT_SECURE_NO_DEPRECATE”: 宏重定义
+          C:\boost_1_55_0\boost/move/detail/config_begin.hpp(15) : 参见“_CRT_SECURE_NO_DEPRECATE”的前一个定义
+..\Query.cpp(224): warning C4244: “return”: 从“my_ulonglong”转换到“long”，可能丢失数据
+..\Query.cpp(348): warning C4244: “=”: 从“uint64_t”转换到“unsigned long”，可能丢失数据
+  set_t.cpp
+  StderrLog.cpp
+  SysLog.cpp
+  正在生成代码...
+  mysqlwrapped.vcxproj -> D:\work\project\haixiang\libs\Release\mysqlwrapped.lib

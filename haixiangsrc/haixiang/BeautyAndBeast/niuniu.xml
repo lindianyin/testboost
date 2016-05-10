@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<php_sign_key_>z5u%wi31^_#h=284u%keg+ovc+j6!69wpwqe#u9*st5os5$=j2</php_sign_key_>
+	<db_port_>3306</db_port_>
+	<db_host_>192.168.17.230</db_host_>
+	<db_user_>root</db_user_>
+	<db_pwd_>123456</db_pwd_>
+	<db_name_>beauty_beast</db_name_>
+
+	<accdb_port_>3306</accdb_port_>
+	<accdb_host_>192.168.17.230</accdb_host_>
+	<accdb_user_>root</accdb_user_>
+	<accdb_pwd_>123456</accdb_pwd_>
+	<accdb_name_>account_server</accdb_name_>
+	<client_port_>15111</client_port_>
+	<cache_ip_>127.0.0.1</cache_ip_>
+	<cache_port_>20001</cache_port_>
+	<have_banker_>0</have_banker_>
+</config>

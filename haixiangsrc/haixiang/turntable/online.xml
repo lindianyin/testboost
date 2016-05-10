@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<config>
+	<online>
+		<time>5</time><!--分钟-->
+		<reward>1000</reward>
+	</online>
+	<online>
+		<time>10</time><!--分钟-->
+		<reward>2000</reward>
+	</online>
+	<online>
+		<time>20</time><!--分钟-->
+		<reward>4000</reward>
+	</online>
+	<online>
+		<time>25</time><!--分钟-->
+		<reward>5000</reward>
+	</online>
+	<online>
+		<time>60</time><!--分钟-->
+		<reward>12000</reward>
+	</online>
+</config>

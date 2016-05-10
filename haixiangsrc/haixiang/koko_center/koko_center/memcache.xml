@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<accdb_port_>3306</accdb_port_>
+	<accdb_host_>192.168.17.230</accdb_host_>
+	<accdb_user_>hunter</accdb_user_>
+	<accdb_pwd_>V@!*A#x!1cop%re0</accdb_pwd_>
+	<accdb_name_>koko</accdb_name_>
+	<client_port_>10000</client_port_>
+	<signkey_>{51B539D8-0D9A-4E35-940E-22C6EBFA86A8}</signkey_>
+	<token_generate_key_>{327BE8D2-4A23-428F-B006-5A755288D5AB}</token_generate_key_>
+	<shortmsg_host_>115.236.8.106</shortmsg_host_>
+	<shortmsg_port_>8887</shortmsg_port_>
+</config>

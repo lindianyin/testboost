@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<Item id="B001" type="D024" rate="31.6666666666667" reward="300" experience="2" width="380" height="220" data="5" step="100" spawn="2500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="B002" type="D025" rate="23.75" reward="400" experience="2" width="330" height="350" data="5" step="100" spawn="2500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="B003" type="D028" rate="21.1111111111111" reward="450" experience="2" width="350" height="220" data="5" step="100" spawn="2500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="B004" type="D052" rate="19" reward="500" experience="2" width="380" height="280" data="5" step="100" spawn="2500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+</root>

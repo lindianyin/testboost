@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding ="UTF-8"?>
+<context>
+	<config>
+		<!-- 游戏ID，用于数据库基于不同游戏的数据查找分析
+			Web牛牛			6
+			iPhone牛牛		11
+			iPhone老虎机	12
+			iPhone捕鱼		13
+			Web扎金花		14
+			水果转转		15
+			四大美女		16
+			四大名著		17
+			名驹			18
+			运动会			19
+			车行			20
+			九转神龙		21
+
+			围棋			30
+		-->
+		<game_id>30</game_id>
+
+		<!-- 游戏名称
+			根据不同游戏需要配置
+			beauty		四大美女
+			fruit		水果转转
+			games		运动会
+			motors		车行
+		-->
+		<game_name>gogame</game_name>
+
+		<!-- 注册奖励 -->
+		<register_account_reward_>10000</register_account_reward_>
+
+		<php_sign_key_>z5u%wi31^_#h=284u%keg+ovc+j6!69wpwqe#u9*st5os5$=j2</php_sign_key_>
+		<db_port_>3306</db_port_>
+		<db_host_>192.168.17.230</db_host_>
+		<db_user_>hunter</db_user_>
+		<db_pwd_>V@!*A#x!1cop%re0</db_pwd_>
+		<db_name_>gogame</db_name_>
+
+		<accdb_port_>3306</accdb_port_>
+		<accdb_host_>192.168.17.230</accdb_host_>
+		<accdb_user_>root</accdb_user_>
+		<accdb_pwd_>123456</accdb_pwd_>
+		<accdb_name_>account_server_sohu</accdb_name_>
+		<client_port_>15120</client_port_>
+		<cache_ip_>127.0.0.1</cache_ip_>
+		<cache_port_>9888</cache_port_>
+		
+		<!--
+		<world_ip_>192.168.17.238</world_ip_>
+		<world_port_>10001</world_port_>
+		<world_id_>12</world_id_>
+		-->
+		<!-- 计划开启时间 -->
+		<scheduledTaskTime>2015-11-23 12:58:00</scheduledTaskTime>
+		<!-- 计划任务周期 天数|小时|分钟|秒 -->
+		<period_time>7|0|0|0</period_time>
+		<!-- 断线重连等待时间 -->
+		<wait_reconnect>30000</wait_reconnect>
+	</config>
+	<platform>
+		<config_7158>
+			<!--	7158平台用GAMEID
+					四大美女	2037
+					名驹		2039
+					老虎机		2040
+					捕鱼		8010
+					水果转转 	8011
+					四大名著	8012
+					牛牛		8013
+					运动会		8014
+					车行		2041
+					九转神龙	2042
+			-->
+			<game_id>8011</game_id>
+			<host_>api2.7158.com</host_>
+			<port_>80</port_>
+			<skey_>E743C9007A97702A58F7529FFFA06A0BE39CE1C48579C37E0939796BB63358E16FEF493AAAEA0F78</skey_>
+			<verify_param_>/I_Verify.aspx?</verify_param_>
+			<trade_param_>/I_JB.aspx?</trade_param_>
+			<query_param_>/I_getCurJB.aspx?</query_param_>
+			<broadcast_param_>/I_WinningInfo.aspx?</broadcast_param_>
+			<rate_>1.0</rate_>
+			<broadcast_skey_>8D8025CBE4ABFBB6FE3F1C3574DAAC0F9BDEC2D56ABC713BF52D5BBE5EB00D24E04B1D78AD4B37CA</broadcast_skey_>
+		</config_7158>
+		<config_17173>
+
+			<!--	17173平台用GAMEID 
+					砸蛋 			1
+					四大名著		2
+					牛牛			3
+					四大美女		10
+					水果转转		11
+					赛马			12
+					老虎机			14
+					运动会			0
+					车行			4
+					九转神龙		5
+			-->
+			<game_id>4</game_id>
+			<host_>v.koko.com</host_>
+			<port_>80</port_>
+			<skey_>C2546726272942A294CEDE3E19258C6C</skey_>
+			<trade_param_>/open/t_one.action?</trade_param_>
+			<broadcast_param_>/open/t_award.action?</broadcast_param_>
+			<appid_>600014</appid_>
+			<broadcast_appid_>600014</broadcast_appid_>
+			<broadcast_key_>C2546726272942A294CEDE3E19258C6C</broadcast_key_>
+		</config_17173>
+		<config_t58>
+			<fromid_>2</fromid_>
+			<game_id_>9000</game_id_>
+			<host_>games.tiao58.com</host_>
+			<port_>80</port_>
+			<skey_>B7AD0EAA3BBC401795CE6B6F039E4484</skey_>
+			<verify_param_>/FishGame/gameLogin.aspx?</verify_param_>
+			<trade_param_>/FishGame/gamechangecoin.aspx?</trade_param_>
+			<rate_>10</rate_>
+		</config_t58>
+	</platform>
+</context>

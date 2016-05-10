@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 车行游戏奖励信息 -->
+	<motors>赢得了%lld金币奖励，豪车美女相伴左右，小伙伴速去加入吧!</motors>
+	<!-- 新运动会 -->
+	<games>赢得了%lld金币奖励，欢迎大家激情参战!</games>
+	<!-- 水果转转 -->
+	<fruit>赢得了%lld金币奖励，请大家吃水果咯!</fruit>
+	<!-- 四大美女 -->
+	<beauty>赢得了%lld金币奖励，欢迎大家来选妃!</beauty>
+</config>
+

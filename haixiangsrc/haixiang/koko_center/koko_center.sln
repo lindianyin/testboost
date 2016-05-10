@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "koko_center", "koko_center\koko_center.vcxproj", "{2A69C1E8-C4D8-4447-9965-3F220642899A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A69C1E8-C4D8-4447-9965-3F220642899A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A69C1E8-C4D8-4447-9965-3F220642899A}.Debug|Win32.Build.0 = Debug|Win32
+		{2A69C1E8-C4D8-4447-9965-3F220642899A}.Release|Win32.ActiveCfg = Release|Win32
+		{2A69C1E8-C4D8-4447-9965-3F220642899A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

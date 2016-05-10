@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<config>
+	<scene>
+		<iid>1</iid>				
+		<lowcap>0</lowcap>		<!--进场限制-->
+		<exchange>10</exchange>		<!--1分代表多少金币-->
+	</scene>
+	<scene>
+		<iid>10</iid>
+		<lowcap>0</lowcap>
+		<exchange>10</exchange>
+	</scene>
+	<scene>
+		<iid>50</iid>
+		<lowcap>0</lowcap>
+		<exchange>10</exchange>
+	</scene>
+	<scene>
+		<iid>100</iid>
+		<lowcap>500000</lowcap>
+		<exchange>5000</exchange>
+	</scene>
+	<scene>
+		<iid>500</iid>
+		<lowcap>1000000</lowcap>
+		<exchange>10000</exchange>
+	</scene>
+	<scene>
+		<iid>vip1</iid>
+		<lowcap>5000000</lowcap>
+		<exchange>50000</exchange>
+	</scene>
+	<scene>
+		<iid>vip2</iid>
+		<lowcap>10000000</lowcap>
+		<exchange>100000</exchange>
+	</scene>
+</config>

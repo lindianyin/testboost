@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<accdb_port_>3306</accdb_port_>
+	<accdb_host_>192.168.17.230</accdb_host_>
+	<accdb_user_>hunter</accdb_user_>
+	<accdb_pwd_>V@!*A#x!1cop%re0</accdb_pwd_>
+	<accdb_name_>account_server_7158</accdb_name_>
+	<client_port_>9999</client_port_>
+	<sync_local_port_>8000</sync_local_port_>
+	<sync_remote_ip_>127.0.0.1</sync_remote_ip_>
+	<sync_remote_port_>8001</sync_remote_port_>
+	<is_slave_>0</is_slave_>
+</config>

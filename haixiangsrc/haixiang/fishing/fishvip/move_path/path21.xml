@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<path>
+	<point x="-280" y="160"/>
+	<point x="160" y="160"/>
+        <point x="480" y="160"/>
+        <point x="800" y="160"/>
+	<point x="960" y="320"/>
+	<point x="800" y="480"/>
+        <point x="480" y="480"/>
+        <point x="160" y="480"/>
+        <point x="-280" y="480"/>
+</path>

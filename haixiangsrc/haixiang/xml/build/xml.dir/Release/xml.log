@@ -1,0 +1,9 @@
+﻿  Building Custom Rule D:/work/project/haixiang/xml/CMakeLists.txt
+  CMake does not need to re-run because D:\work\project\haixiang\xml\build\CMakeFiles\generate.stamp is up-to-date.
+  simple_xml_parse.cpp
+D:\work\project\haixiang\xml\simple_xml_parse.cpp(317): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+D:\work\project\haixiang\xml\simple_xml_parse.cpp(323): warning C4018: “<”: 有符号/无符号不匹配
+D:\work\project\haixiang\xml\simple_xml_parse.cpp(352): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+  xml.vcxproj -> D:\work\project\haixiang\libs\Release\xml.lib

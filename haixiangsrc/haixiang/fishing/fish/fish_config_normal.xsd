@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="root">
+	<xs:complexType>
+		<xs:sequence maxOccurs="unbounded">
+    	<xs:element name="Item">
+    		<xs:complexType>
+    			<xs:attribute name="id" type="xs:string"/>
+				<xs:attribute name="type" type="xs:string"/>
+				<xs:attribute name="rate" type="xs:int"/>
+				<xs:attribute name="reward" type="xs:int"/>
+				<xs:attribute name="experience" type="xs:int"/>
+				<xs:attribute name="width" type="xs:int"/>
+				<xs:attribute name="height" type="xs:int"/>
+				<xs:attribute name="data" type="xs:int"/>
+				<xs:attribute name="step" type="xs:int"/>
+				<xs:attribute name="spawn" type="xs:int"/>
+				<xs:attribute name="minspawn" type="xs:int"/>
+				<xs:attribute name="maxspawn" type="xs:int"/>
+				<xs:attribute name="spawnw" type="xs:int"/>
+				<xs:attribute name="spawnh" type="xs:int"/>
+			</xs:complexType>
+    	</xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

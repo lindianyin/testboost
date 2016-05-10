@@ -1,0 +1,3 @@
+#define	 GAME_ID_7158	GAME_ID_7158_DDZ
+#define  GAME_ID_173	GAME_ID_7158_DDZ
+#define	 GAME_ID		DDZ

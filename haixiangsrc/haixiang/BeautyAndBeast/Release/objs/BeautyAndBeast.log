@@ -1,0 +1,25 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  base64Con.cpp
+  main.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  msg_client_common.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  game_logic.cpp
+game_logic.cpp(2): fatal error C1083: 无法打开包括文件:“msg_server_common.h”: No such file or directory
+  game_player.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+d:\work\project\haixiang\beautyandbeast\game_player.h(7): fatal error C1083: 无法打开包括文件:“player_base.h”: No such file or directory
+  msg_client.cpp
+msg_client.cpp(1): fatal error C1083: 无法打开包括文件:“msg_server_common.h”: No such file or directory
+  service.cpp
+d:\work\project\haixiang\beautyandbeast\service.h(2): fatal error C1083: 无法打开包括文件:“game_service_base.h”: No such file or directory
+  正在生成代码...

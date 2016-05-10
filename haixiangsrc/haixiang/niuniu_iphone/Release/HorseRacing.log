@@ -1,0 +1,74 @@
+﻿  base64Con.cpp
+  main.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+..\game_service_base\main.cpp(51): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  msg_client_common.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+..\game_service_base\msg_client_common.cpp(98): warning C4244: “参数”: 从“__int64”转换到“unsigned int”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(234): warning C4244: “=”: 从“double”转换到“__int64”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(557): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(687): warning C4244: “初始化”: 从“longlong”转换到“int”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(767): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(877): warning C4244: “=”: 从“__int64”转换到“double”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(901): warning C4244: “=”: 从“long”转换到“short”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(902): warning C4244: “=”: 从“int64_t”转换到“double”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(976): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(1010): warning C4244: “return”: 从“longlong”转换到“int”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(1341): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(1367): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(1369): warning C4244: “初始化”: 从“double”转换到“longlong”，可能丢失数据
+..\game_service_base\msg_client_common.cpp(1370): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+  telfee_match.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+..\game_service_base\telfee_match.cpp(99): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+..\game_service_base\telfee_match.cpp(130): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+..\game_service_base\telfee_match.cpp(137): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+..\game_service_base\telfee_match.cpp(145): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+..\game_service_base\telfee_match.cpp(306): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+..\game_service_base\telfee_match.cpp(312): warning C4018: “<”: 有符号/无符号不匹配
+  game_logic.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+game_logic.cpp(448): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(882): warning C4244: “参数”: 从“longlong”转换到“int”，可能丢失数据
+game_logic.cpp(888): warning C4244: “参数”: 从“longlong”转换到“int”，可能丢失数据
+game_logic.cpp(978): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(987): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1068): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1092): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1147): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1156): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1159): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1733): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1737): warning C4244: “=”: 从“longlong”转换到“double”，可能丢失数据
+game_logic.cpp(1874): warning C4244: “参数”: 从“double”转换到“longlong”，可能丢失数据
+  game_player.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  msg_client.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+  poder_card.cpp
+  service.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+D:\work\project\haixiang\game_service_base\service_config_base.hpp(29): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+LINK : fatal error LNK1104: 无法打开文件“libboost_date_time-vc110-mt-1_55.lib”

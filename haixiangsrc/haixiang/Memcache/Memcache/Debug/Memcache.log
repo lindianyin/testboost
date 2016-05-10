@@ -1,0 +1,28 @@
+﻿项目文件包含 ToolsVersion="14.0" 设置，但此工具集未知或缺失。您可以通过为此工具集安装相应的 .NET Framework 来解决此问题。将项目视为具有 ToolsVersion="4.0" 设置。
+  mem_cache.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+d:\work\project\haixiang\memcache\memcache\mem_cache.cpp(199): warning C4018: “<”: 有符号/无符号不匹配
+d:\work\project\haixiang\memcache\memcache\mem_cache.cpp(263): warning C4018: “<”: 有符号/无符号不匹配
+d:\work\project\haixiang\memcache\memcache\mem_cache.cpp(359): warning C4018: “<”: 有符号/无符号不匹配
+d:\work\project\haixiang\memcache\memcache\mem_cache.cpp(365): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+d:\work\project\haixiang\memcache\memcache\mem_cache.cpp(614): warning C4244: “参数”: 从“__int64”转换到“unsigned int”，可能丢失数据
+d:\program files (x86)\microsoft visual studio 11.0\vc\include\algorithm(965): warning C4996: 'std::_Swap_ranges': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\algorithm(950) : 参见“std::_Swap_ranges”的声明
+          c:\boost_1_55_0\boost\uuid\uuid.hpp(151): 参见对正在编译的函数 模板 实例化“_FwdIt2 std::swap_ranges<boost::uuids::uuid::iterator,boost::uuids::uuid::iterator>(_FwdIt1,_FwdIt1,_FwdIt2)”的引用
+          with
+          [
+              _FwdIt2=boost::uuids::uuid::iterator,
+              _FwdIt1=boost::uuids::uuid::iterator
+          ]
+d:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(3017): warning C4996: 'std::_Equal1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\xutility(3002) : 参见“std::_Equal1”的声明
+          c:\boost_1_55_0\boost\uuid\uuid.hpp(161): 参见对正在编译的函数 模板 实例化“bool std::equal<boost::uuids::uuid::const_iterator,boost::uuids::uuid::const_iterator>(_InIt1,_InIt1,_InIt2)”的引用
+          with
+          [
+              _InIt1=boost::uuids::uuid::const_iterator,
+              _InIt2=boost::uuids::uuid::const_iterator
+          ]
+  Memcache.vcxproj -> D:\work\project\haixiang\Memcache\Debug\Memcache.exe

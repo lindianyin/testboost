@@ -1,0 +1,2 @@
+D:/work/project/haixiang/mysqlwrapped/build/CMakeFiles/mysqlwrapped.dir
+D:/work/project/haixiang/mysqlwrapped/build/CMakeFiles/ALL_BUILD.dir

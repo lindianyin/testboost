@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<fish>
+		<type>F001</type>		<!--资源名称-->
+		<rate>4500</rate>		<!--打中概率，万分之几-->
+                <reward>2</reward>	        <!--赔率-->
+                <experience>4</experience>      <!--经验-->
+		<width>90</width>		        <!--长-->
+		<height>40</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>1000</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>6</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>200</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+	<fish>
+		<type>F002</type>		<!--资源名称-->
+		<rate>4500</rate>		<!--打中概率，万分之几-->
+                <reward>2</reward>	        <!--赔率-->
+                <experience>4</experience>      <!--经验-->
+		<width>90</width>		        <!--长-->
+		<height>40</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>910</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>6</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>200</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F003</type>		<!--资源名称-->
+		<rate>3000</rate>		<!--打中概率，万分之几-->
+                <reward>3</reward>	        <!--赔率-->
+                <experience>6</experience>      <!--经验-->
+		<width>65</width>		        <!--长-->
+		<height>40</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>800</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>5</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>200</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F004</type>		<!--资源名称-->
+		<rate>2250</rate>		<!--打中概率，万分之几-->
+                <reward>4</reward>	        <!--赔率-->
+                <experience>8</experience>      <!--经验-->
+		<width>110</width>		        <!--长-->
+		<height>40</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>679</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>4</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>200</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F005</type>		<!--资源名称-->
+		<rate>1800</rate>		<!--打中概率，万分之几-->
+                <reward>5</reward>	        <!--赔率-->
+                <experience>10</experience>      <!--经验-->
+		<width>125</width>		        <!--长-->
+		<height>105</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>650</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>4</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>200</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F006</type>		<!--资源名称-->
+		<rate>1500</rate>		<!--打中概率，万分之几-->
+                <reward>6</reward>	        <!--赔率-->
+                <experience>12</experience>      <!--经验-->
+		<width>135</width>		        <!--长-->
+		<height>65</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>550</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>150</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F007</type>		<!--资源名称-->
+		<rate>1280</rate>		<!--打中概率，万分之几-->
+                <reward>7</reward>	        <!--赔率-->
+                <experience>14</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>45</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>420</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F008</type>		<!--资源名称-->
+		<rate>1125</rate>		<!--打中概率，万分之几-->
+                <reward>8</reward>	        <!--赔率-->
+                <experience>16</experience>      <!--经验-->
+		<width>107</width>		        <!--长-->
+		<height>68</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>426</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F009</type>		<!--资源名称-->
+		<rate>1000</rate>		<!--打中概率，万分之几-->
+                <reward>9</reward>	        <!--赔率-->
+                <experience>18</experience>      <!--经验-->
+		<width>186</width>		        <!--长-->
+		<height>83</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>500</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>2</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>150</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F010</type>		<!--资源名称-->
+		<rate>900</rate>		<!--打中概率，万分之几-->
+                <reward>10</reward>	        <!--赔率-->
+                <experience>20</experience>      <!--经验-->
+		<width>124</width>		        <!--长-->
+		<height>135</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>240</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F011</type>		<!--资源名称-->
+		<rate>750</rate>		<!--打中概率，万分之几-->
+                <reward>12</reward>	        <!--赔率-->
+                <experience>24</experience>      <!--经验-->
+		<width>136</width>		        <!--长-->
+		<height>83</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>280</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>2</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>150</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+	<fish>
+		<type>F012</type>		<!--资源名称-->
+		<rate>600</rate>		<!--打中概率，万分之几-->
+                <reward>15</reward>	        <!--赔率-->
+                <experience>30</experience>      <!--经验-->
+		<width>190</width>		        <!--长-->
+		<height>100</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>280</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>2</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>150</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F013</type>		<!--资源名称-->
+		<rate>500</rate>		<!--打中概率，万分之几-->
+                <reward>18</reward>	        <!--赔率-->
+                <experience>36</experience>      <!--经验-->
+		<width>131</width>		        <!--长-->
+		<height>144</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>362</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>2</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F014</type>		<!--资源名称-->
+		<rate>450</rate>		<!--打中概率，万分之几-->
+                <reward>20</reward>	        <!--赔率-->
+                <experience>40</experience>      <!--经验-->
+		<width>190</width>		        <!--长-->
+		<height>100</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>250</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F015</type>		<!--资源名称-->
+		<rate>360</rate>		<!--打中概率，万分之几-->
+                <reward>25</reward>	        <!--赔率-->
+                <experience>50</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>156</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>230</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>2</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>150</spawnw>		<!--刷新区域宽度-->
+		<spawnh>150</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F016</type>		<!--资源名称-->
+		<rate>300</rate>		<!--打中概率，万分之几-->
+                <reward>30</reward>	        <!--赔率-->
+                <experience>60</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>95</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>220</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F017</type>		<!--资源名称-->
+		<rate>225</rate>		<!--打中概率，万分之几-->
+                <reward>40</reward>	        <!--赔率-->
+                <experience>80</experience>      <!--经验-->
+		<width>167</width>		        <!--长-->
+		<height>149</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>220</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>2</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F018</type>		<!--资源名称-->
+		<rate>180</rate>		<!--打中概率，万分之几-->
+                <reward>50</reward>	        <!--赔率-->
+                <experience>100</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>95</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>190</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F019</type>		<!--资源名称-->
+		<rate>150</rate>		<!--打中概率，万分之几-->
+                <reward>60</reward>	        <!--赔率-->
+                <experience>120</experience>      <!--经验-->
+		<width>181</width>		        <!--长-->
+		<height>122</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>190</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F020</type>		<!--资源名称-->
+		<rate>106</rate>		<!--打中概率，万分之几-->
+                <reward>80</reward>	        <!--赔率-->
+                <experience>160</experience>      <!--经验-->
+		<width>277</width>		        <!--长-->
+		<height>55</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>176</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F021</type>		<!--资源名称-->
+		<rate>85</rate>		<!--打中概率，万分之几-->
+                <reward>100</reward>	        <!--赔率-->
+                <experience>200</experience>      <!--经验-->
+		<width>350</width>		        <!--长-->
+		<height>191</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>160</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F022</type>		<!--资源名称-->
+		<rate>30</rate>		<!--打中概率，万分之几-->
+                <reward>200</reward>	        <!--赔率-->
+                <experience>600</experience>      <!--经验-->
+		<width>471</width>		        <!--长-->
+		<height>333</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>40</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F023</type>		<!--资源名称-->
+		<rate>120</rate>		<!--打中概率，万分之几-->
+                <reward>80</reward>	        <!--赔率-->
+                <experience>160</experience>      <!--经验-->
+		<width>172</width>		        <!--长-->
+		<height>90</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>83</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F024</type>		<!--资源名称-->
+		<rate>47</rate>		<!--打中概率，万分之几-->
+                <reward>200</reward>	        <!--赔率-->
+                <experience>400</experience>      <!--经验-->
+		<width>370</width>		        <!--长-->
+		<height>190</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>78</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F025</type>		<!--资源名称-->
+		<rate>47</rate>		<!--打中概率，万分之几-->
+                <reward>200</reward>	        <!--赔率-->
+                <experience>400</experience>      <!--经验-->
+		<width>320</width>		        <!--长-->
+		<height>320</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>108</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F026</type>		<!--资源名称-->
+		<rate>120</rate>		<!--打中概率，万分之几-->
+                <reward>80</reward>	        <!--赔率-->
+                <experience>160</experience>      <!--经验-->
+		<width>138</width>		        <!--长-->
+		<height>107</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>143</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F027</type>		<!--资源名称-->
+		<rate>60</rate>		<!--打中概率，万分之几-->
+                <reward>150</reward>	        <!--赔率-->
+                <experience>300</experience>      <!--经验-->
+		<width>339</width>		        <!--长-->
+		<height>168</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>100</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F028</type>		<!--资源名称-->
+		<rate>48</rate>		<!--打中概率，万分之几-->
+                <reward>200</reward>	        <!--赔率-->
+                <experience>400</experience>      <!--经验-->
+		<width>334</width>		        <!--长-->
+		<height>141</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>97</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F029</type>		<!--资源名称-->
+		<rate>80</rate>		<!--打中概率，万分之几-->
+                <reward>120</reward>	        <!--赔率-->
+                <experience>240</experience>      <!--经验-->
+		<width>172</width>		        <!--长-->
+		<height>90</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>120</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+
+
+<fish>
+		<type>D030</type>		<!--资源名称-->
+		<rate>19</rate>		<!--打中概率，万分之几-->
+                <reward>500</reward>	        <!--赔率-->
+                <experience>1000</experience>      <!--经验-->
+		<width>469</width>		        <!--长-->
+		<height>240</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>50</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>D052</type>		<!--资源名称-->
+		<rate>32</rate>		<!--打中概率，万分之几-->
+                <reward>300</reward>	        <!--赔率-->
+                <experience>600</experience>      <!--经验-->
+		<width>370</width>		        <!--长-->
+		<height>265</height>		<!--宽-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>100</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>D051</type>		<!--资源名称-->
+
+		<rate>17</rate>		<!--打中概率，万分之几-->
+                <reward>0</reward>	        <!--赔率-->
+                <experience>0</experience>      <!--经验-->
+		<width>85</width>		        <!--长-->
+		<height>70</height>		<!--宽-->
+                <data>2</data>                     <!--鱼的类型-->
+		<step>50</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>80</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F005</type>		<!--资源名称-->              
+                 <id>D031</id>		         <!--资源ID-->
+		<rate>600</rate>		<!--打中概率，万分之几-->
+                <reward>5</reward>	        <!--赔率-->
+                <experience>10</experience>      <!--经验-->
+		<width>125</width>		        <!--长-->
+		<height>105</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F006</type>		<!--资源名称-->
+                <id>D032</id>		         <!--资源ID-->
+		<rate>500</rate>		<!--打中概率，万分之几-->
+                <reward>6</reward>	        <!--赔率-->
+                <experience>12</experience>      <!--经验-->
+		<width>135</width>		        <!--长-->
+		<height>65</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F007</type>		<!--资源名称-->
+                <id>D033</id>		         <!--资源ID-->
+		<rate>425</rate>		<!--打中概率，万分之几-->
+                <reward>7</reward>	        <!--赔率-->
+                <experience>14</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>45</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F008</type>		<!--资源名称-->
+                <id>D034</id>		         <!--资源ID-->
+		<rate>375</rate>		<!--打中概率，万分之几-->
+                <reward>8</reward>	        <!--赔率-->
+                <experience>16</experience>      <!--经验-->
+		<width>107</width>		        <!--长-->
+		<height>68</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F009</type>		<!--资源名称-->
+                <id>D035</id>		         <!--资源ID-->
+		<rate>333</rate>		<!--打中概率，万分之几-->
+                <reward>9</reward>	        <!--赔率-->
+                <experience>18</experience>      <!--经验-->
+		<width>186</width>		        <!--长-->
+		<height>83</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F010</type>		<!--资源名称-->
+                <id>D036</id>		         <!--资源ID-->
+		<rate>300</rate>		<!--打中概率，万分之几-->
+                <reward>10</reward>	        <!--赔率-->
+                <experience>20</experience>      <!--经验-->
+		<width>124</width>		        <!--长-->
+		<height>135</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F011</type>		<!--资源名称-->
+                <id>D037</id>		         <!--资源ID-->
+		<rate>250</rate>		<!--打中概率，万分之几-->
+                <reward>12</reward>	        <!--赔率-->
+                <experience>24</experience>      <!--经验-->
+		<width>136</width>		        <!--长-->
+		<height>83</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F012</type>		<!--资源名称-->
+                <id>D038</id>		         <!--资源ID-->
+		<rate>200</rate>		<!--打中概率，万分之几-->
+                <reward>15</reward>	        <!--赔率-->
+                <experience>30</experience>      <!--经验-->
+		<width>190</width>		        <!--长-->
+		<height>100</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F013</type>		<!--资源名称-->
+                <id>D039</id>		         <!--资源ID-->
+		<rate>166</rate>		<!--打中概率，万分之几-->
+                <reward>18</reward>	        <!--赔率-->
+                <experience>36</experience>      <!--经验-->
+		<width>131</width>		        <!--长-->
+		<height>144</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F015</type>		<!--资源名称-->
+                <id>D040</id>		         <!--资源ID-->
+		<rate>120</rate>		<!--打中概率，万分之几-->
+                <reward>25</reward>	        <!--赔率-->
+                <experience>50</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>156</height>		<!--宽-->
+                <data>1</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>20</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>3</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>3</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F005</type>		<!--资源名称-->
+                <id>D041</id>		         <!--资源ID-->
+		<rate>360</rate>		<!--打中概率，万分之几-->
+                <reward>5</reward>	        <!--赔率-->
+                <experience>10</experience>      <!--经验-->
+		<width>125</width>		        <!--长-->
+		<height>105</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F006</type>		<!--资源名称-->
+                <id>D042</id>		         <!--资源ID-->
+		<rate>300</rate>		<!--打中概率，万分之几-->
+                <reward>6</reward>	        <!--赔率-->
+                <experience>12</experience>      <!--经验-->
+		<width>135</width>		        <!--长-->
+		<height>65</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F007</type>		<!--资源名称-->
+                <id>D043</id>		         <!--资源ID-->
+		<rate>255</rate>		<!--打中概率，万分之几-->
+                <reward>7</reward>	        <!--赔率-->
+                <experience>14</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>45</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F008</type>		<!--资源名称-->
+                <id>D044</id>		         <!--资源ID-->
+		<rate>225</rate>		<!--打中概率，万分之几-->
+                <reward>8</reward>	        <!--赔率-->
+                <experience>16</experience>      <!--经验-->
+		<width>107</width>		        <!--长-->
+		<height>68</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F009</type>		<!--资源名称-->
+                <id>D045</id>		         <!--资源ID-->
+		<rate>200</rate>		<!--打中概率，万分之几-->
+                <reward>0</reward>	        <!--赔率-->
+                <experience>0</experience>      <!--经验-->
+		<width>186</width>		        <!--长-->
+		<height>83</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F010</type>		<!--资源名称-->
+                <id>D046</id>		         <!--资源ID-->
+		<rate>180</rate>		<!--打中概率，万分之几-->
+                <reward>9</reward>	        <!--赔率-->
+                <experience>18</experience>      <!--经验-->
+		<width>124</width>		        <!--长-->
+		<height>135</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F011</type>		<!--资源名称-->
+                <id>D047</id>		         <!--资源ID-->
+		<rate>250</rate>		<!--打中概率，万分之几-->
+                <reward>12</reward>	        <!--赔率-->
+                <experience>24</experience>      <!--经验-->
+		<width>136</width>		        <!--长-->
+		<height>83</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F012</type>		<!--资源名称-->
+                <id>D048</id>		         <!--资源ID-->
+		<rate>200</rate>		<!--打中概率，万分之几-->
+                <reward>15</reward>	        <!--赔率-->
+                <experience>30</experience>      <!--经验-->
+		<width>190</width>		        <!--长-->
+		<height>100</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F013</type>		<!--资源名称-->
+                <id>D049</id>		         <!--资源ID-->
+		<rate>166</rate>		<!--打中概率，万分之几-->
+                <reward>18</reward>	        <!--赔率-->
+                <experience>36</experience>      <!--经验-->
+		<width>131</width>		        <!--长-->
+		<height>144</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+<fish>
+		<type>F015</type>		<!--资源名称-->
+                <id>D050</id>		         <!--资源ID-->
+		<rate>180</rate>		<!--打中概率，万分之几-->
+                <reward>25</reward>	        <!--赔率-->
+                <experience>50</experience>      <!--经验-->
+		<width>175</width>		        <!--长-->
+		<height>156</height>		<!--宽-->
+                <data>3</data>                     <!--鱼的类型-->
+		<step>100</step>		<!--步长，鱼的一个动作周期内移动多少像素，这个值配得不对的话，会出现滑步现像-->
+		<spawn>10</spawn>		<!--刷新概率，万分之几-->
+		<minspawn>1</minspawn>	<!--最少一次刷几条-->
+		<maxspawn>1</maxspawn>	<!--最多一次刷几条-->
+		<spawnw>100</spawnw>		<!--刷新区域宽度-->
+		<spawnh>100</spawnh>		<!--刷新区域高度-->
+	</fish>
+</config>

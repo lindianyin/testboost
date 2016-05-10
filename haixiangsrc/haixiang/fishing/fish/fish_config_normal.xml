@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<Item id="A001" type="F001" rate="4750" reward="2" experience="2" width="74" height="30" data="10" step="200" spawn="300" minspawn="1" maxspawn="4" spawnw="30" spawnh="30"/>
+	<Item id="A002" type="F002" rate="3166.66666666667" reward="3" experience="2" width="47" height="36" data="10" step="150" spawn="1000" minspawn="1" maxspawn="4" spawnw="30" spawnh="30"/>
+	<Item id="A003" type="F003" rate="2375" reward="4" experience="2" width="55" height="36" data="10" step="150" spawn="1500" minspawn="1" maxspawn="4" spawnw="30" spawnh="30"/>
+	<Item id="A004" type="F004" rate="1900" reward="5" experience="2" width="74" height="30" data="10" step="150" spawn="500" minspawn="1" maxspawn="4" spawnw="30" spawnh="30"/>
+	<Item id="A005" type="F005" rate="1583.33333333333" reward="6" experience="2" width="93" height="34" data="10" step="100" spawn="350" minspawn="1" maxspawn="4" spawnw="30" spawnh="30"/>
+	<Item id="A006" type="F006" rate="1357.14285714286" reward="7" experience="2" width="71" height="34" data="10" step="100" spawn="500" minspawn="1" maxspawn="4" spawnw="30" spawnh="30"/>
+	<Item id="A007" type="F007" rate="1187.5" reward="8" experience="2" width="78" height="47" data="10" step="100" spawn="500" minspawn="1" maxspawn="4" spawnw="30" spawnh="30"/>
+	<Item id="A008" type="F008" rate="791.666666666667" reward="12" experience="2" width="108" height="64" data="0" step="100" spawn="500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A009" type="F009" rate="633.333333333333" reward="15" experience="2" width="185" height="127" data="0" step="100" spawn="500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A010" type="F010" rate="527.777777777778" reward="18" experience="2" width="116" height="135" data="0" step="100" spawn="750" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A011" type="F011" rate="500" reward="19" experience="2" width="150" height="99" data="0" step="100" spawn="100" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A012" type="F012" rate="475" reward="20" experience="2" width="124" height="73" data="0" step="100" spawn="500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A013" type="F013" rate="452.380952380952" reward="21" experience="2" width="123" height="113" data="0" step="100" spawn="790" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A014" type="F014" rate="380" reward="25" experience="2" width="167" height="122" data="0" step="100" spawn="500" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A015" type="F015" rate="316.666666666667" reward="30" experience="2" width="160" height="161" data="0" step="100" spawn="300" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A016" type="F016" rate="237.5" reward="40" experience="2" width="133" height="97" data="0" step="100" spawn="300" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A017" type="F017" rate="211.111111111111" reward="45" experience="2" width="153" height="151" data="0" step="100" spawn="150" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A018" type="F018" rate="197.916666666667" reward="48" experience="2" width="142" height="127" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A019" type="F019" rate="158.333333333333" reward="60" experience="2" width="180" height="112" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A020" type="F020" rate="95" reward="100" experience="2" width="272" height="94" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A021" type="F021" rate="86.3636363636364" reward="110" experience="2" width="342" height="109" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A022" type="F022" rate="79.1666666666667" reward="120" experience="2" width="471" height="333" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A023" type="F023" rate="76" reward="125" experience="2" width="243" height="131" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A024" type="F024" rate="63.3333333333333" reward="150" experience="2" width="547" height="198" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A025" type="F025" rate="47.5" reward="200" experience="2" width="278" height="138" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A026" type="F026" rate="45.2380952380952" reward="210" experience="2" width="135" height="70" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A027" type="F027" rate="43.1818181818182" reward="220" experience="2" width="330" height="159" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A028" type="F028" rate="41.304347826087" reward="230" experience="2" width="341" height="345" data="0" step="100" spawn="50" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+	<Item id="A029" type="D051" rate="5" reward="0" experience="2" width="180" height="160" data="2" step="100" spawn="100" minspawn="1" maxspawn="1" spawnw="0" spawnh="0"/>
+</root>

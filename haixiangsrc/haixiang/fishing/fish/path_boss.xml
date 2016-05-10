@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<config>
+	<path>
+		<name>fish\move_path\path37.xml</name>		<!--路径配置文件名-->
+		<for_fish>all</for_fish>	<!--为哪种鱼配置的,all为所有鱼-->
+		<rate>10000</rate>		<!--这条路径随机到的概率为万分之几-->
+	</path>
+
+</config>
